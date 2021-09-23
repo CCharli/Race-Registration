@@ -1,0 +1,19 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+
+let earlyBird = true;
+
+let earlyBirdAge = 18;
+
+if (earlyBird && earlyBirdAge > 18) {
+  raceNumber += 1000
+}
+
+if (raceNumber >= 1000) {
+  console.log(`Hello, speedy! Your race number will be ${raceNumber}. Your race time will begin at 9:30 am.`);
+} else if (!earlyBird && earlyBirdAge > 18) {
+  console.log(`Hello! You will be racing at 11:00 am. Your race number will be ${raceNumber}`);
+} else if (earlyBirdAge < 18){
+  console.log(`Hello, there! You will be racing at 12:30 pm. Your race number will be ${raceNumber}.`);
+} else {
+  console.log(`Uh oh! It looks like you are too old to be young and too young to be old in this race! Please contact the registration desk to proceed.`);
+}
